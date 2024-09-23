@@ -23,5 +23,4 @@ fluid. As with other types of biopsies, the sample collected during fine needle 
 can help make a diagnosis or rule out conditions such as cancer.
 
 -We are using logistic regression since it is a binary classification.
-![image](https://github.com/user-attachments/assets/245423f9-267a-4bfc-9fb3-d0c8d9a5c408)
 
