@@ -1,26 +1,28 @@
-# Breast-Cancer-Prediction
+# Breast Cancer Prediction
 
-There are 2 types of tumors:
-(i) Benign tumor: (0)
-● It is not cancerous
-● Capsulated
-● Non-invasive
-● Slow growing
-● Do not spread to other body parts
-● Cells are normal
+## Overview
+This project applies **machine learning classification** to predict breast cancer diagnoses (benign vs. malignant) using patient medical data.  
+The workflow was designed in **KNIME** and also implemented in **Python** (Jupyter Notebook), achieving high accuracy in distinguishing between benign and malignant tumors.  
 
-(ii) Malignant tumor: (1)
-● It is cancerous
-● Not capsulated
-● Fast growing
-● They spread to other body parts
-● Cells have large, dark nuclei and are abnormal in shape
+## Key Contributions
+- Designed a complete ML pipeline for breast cancer diagnosis  
+- Preprocessed and cleaned medical dataset (handled missing values, normalized features)  
+- Trained models in both **KNIME** and **Python**  
+- Evaluated models using Accuracy, Confusion Matrix, and ROC-AUC   
 
-*Dataset:
-● Dataset is derived from fine needle aspiration, a type of biopsy procedure. In fine needle
-aspiration, a thin needle is inserted into an area of abnormal-appearing tissue or body
-fluid. As with other types of biopsies, the sample collected during fine needle aspiration
-can help make a diagnosis or rule out conditions such as cancer.
+## Tech Stack
+- KNIME Analytics Platform  
+- Python (Scikit-Learn, Pandas, NumPy, Matplotlib, Jupyter Notebook)  
+- Models: Logistic Regression
 
--We are using logistic regression since it is a binary classification.
+## Repository Contents
+- `breast_cancer_prediction.ipynb` – Python notebook implementation  
+- `knime_breast_cancer_prediction.pmml` – KNIME workflow model  
+- `BreastCancer_prediction.joblib` – Serialized trained model  
+- `data.csv` – Input dataset  
+
+## Results
+- Achieved **>90% accuracy** in classifying tumors as benign or malignant  
+- ROC-AUC scores consistently above 0.97  
+- Confusion Matrix analysis shows very low false negatives (critical in medical use)  
 
